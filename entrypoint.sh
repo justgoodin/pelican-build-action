@@ -21,4 +21,9 @@ fi
 echo 'Building site 👷 '
 pelican ${PELICAN_CONTENT_FOLDER:=content} -o output -s ${PELICAN_CONFIG_FILE:=publishconf.py}
 
+echo 'Fixing sitemap ❌ 👉🏽 ✔ '
+python sitemap.py
+
 echo 'Build complete 🎉🎉 🕺💃 '
+
+
