@@ -11,22 +11,15 @@ runs:
   image: 'Dockerfile'  
 
 inputs:
-  GH_PAGES_BRANCH:
-    description: 'override the default `gh-pages` deployment branch'
-    required: false
-    default: 'gh-pages'
-  GH_PAGES_CNAME:
-    description: 'specify the custom domain configured for the output branch'
-    required: false
-    default: none
   PELICAN_CONFIG_FILE:
-    description: 'override the default `pelicanconf.py` config file'
+    description: 'override the default `publishconf.py` config file'
     required: false
-    default: pelicanconf.py
+    default: publishconf.py
   PELICAN_CONTENT_FOLDER:
     description: 'override the default `content` content folder'
     required: false
     default: content
-  PELICAN_THEME_FOLDER:
-    description: 'setup the theme folder with package.json file, is required if you need install node modules'
+  PELICAN_OUTPUT_FOLDER:
+    description: 'override the default `output` output folder'
     required: false
+    default: output
