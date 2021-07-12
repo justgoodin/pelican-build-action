@@ -2,10 +2,9 @@
 
 set -e
 
-echo "REPO: $GITHUB_REPOSITORY"
-echo "ACTOR: $GITHUB_ACTOR"
-
-remote_repo="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+echo "CONFIG: $PELICAN_CONFIG_FILE"
+echo "CONTENT: $PELICAN_CONTENT_FOLDER"
+echo "OUTPUT: $PELICAN_OUTPUT_FOLDER"
 
 echo 'Installing Python 🐍 Requirements  '
 pip install -r requirements.txt
