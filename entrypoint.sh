@@ -11,7 +11,7 @@ pip install -r requirements.txt
 
 
 echo 'Building site 👷 '
-pelican ${PELICAN_CONTENT_FOLDER:=content} -o ${PELICAN_OUTPUT_FOLDER:=output} -s ${PELICAN_CONFIG_FILE:=publishconf.py}
+pelican -D ${PELICAN_CONTENT_FOLDER:=content} -o ${PELICAN_OUTPUT_FOLDER:=output} -s ${PELICAN_CONFIG_FILE:=publishconf.py}
 
 echo 'Running add-ons ➕➕ '
 python addons.py
