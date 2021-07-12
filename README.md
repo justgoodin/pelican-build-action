@@ -1,3 +1,3 @@
-# Build & Deploy Pelican SSG sites to multiple providers
-Current options available
-1. Github Pages
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/justgoodin/pelican-build-action)
+# Build Pelican SSG sites
+This builds the Pelican SSG website and make it ready for deployment
