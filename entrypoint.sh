@@ -13,7 +13,11 @@ pip install -r requirements.txt
 echo 'Building site 👷 '
 pelican -D ${PELICAN_CONTENT_FOLDER:=content} -o ${PELICAN_OUTPUT_FOLDER:=output} -s ${PELICAN_CONFIG_FILE:=publishconf.py}
 
-echo 'Running add-ons ➕➕ '
-python addons.py
+if [ -f addons.py ]; then
+  echo 'Running add-ons ➕➕ '
+  python addons.py
+else
+  echo 'No add-ons configured'
+fi
 
 echo 'Build complete 🎉🎉 🕺💃 '
