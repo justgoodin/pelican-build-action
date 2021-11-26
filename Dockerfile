@@ -1,12 +1,12 @@
-FROM python:3.7-slim
+FROM python:3.10-slim
 
 LABEL "com.github.actions.name"="Deploy Pelican Site to Firebase"
 LABEL "com.github.actions.description"="Deploy Pelican Site to Firebase"
 LABEL "com.github.actions.icon"="home"
 LABEL "com.github.actions.color"="red"
 
-LABEL "repository"="https://github.com/justgoodin/pelican-to-firebase"
-LABEL "homepage"="https://github.com/justgoodin/pelican-to-firebase"
+LABEL "repository"="https://github.com/rehanhaider/pelican-to-firebase"
+LABEL "homepage"="https://github.com/rehanhaider/pelican-to-firebase"
 
 ENV LC_ALL C.UTF-8
 ENV LANG en_US.UTF-8
